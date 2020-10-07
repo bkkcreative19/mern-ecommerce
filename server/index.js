@@ -21,9 +21,10 @@ app.use(morgan("tiny"));
 
 // Routes
 app.use("/api", productRouter);
-app.use("/api", userRouter);
+app.use("/api/users", userRouter);
 
 // Error Handler
+
 app.use(notFound);
 app.use(errorHandler);
 
