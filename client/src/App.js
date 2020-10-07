@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import { Switch, Route } from "react-router-dom";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,9 @@ const App = () => {
       <main className='py-3'>
         <Container>
           <Switch>
+            <Route exact path='/login'>
+              <Login />
+            </Route>
             <Route exact path='/'>
               <HomePage />
             </Route>
