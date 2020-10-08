@@ -9,6 +9,7 @@ import { Switch, Route } from "react-router-dom";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -26,6 +27,9 @@ const App = () => {
           <Switch>
             <Route exact path='/login'>
               <Login />
+            </Route>
+            <Route exact path='/register'>
+              <Register />
             </Route>
             <Route exact path='/'>
               <HomePage />
