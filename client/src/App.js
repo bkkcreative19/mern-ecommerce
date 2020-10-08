@@ -11,6 +11,8 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
+import Shipping from "./pages/Shipping";
+import PaymentMethod from "./pages/PaymentMethod";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -26,6 +28,12 @@ const App = () => {
       <main className='py-3'>
         <Container>
           <Switch>
+            <Route exact path='/payment'>
+              <PaymentMethod />
+            </Route>
+            <Route exact path='/shipping'>
+              <Shipping />
+            </Route>
             <Route exact path='/login'>
               <Login />
             </Route>
