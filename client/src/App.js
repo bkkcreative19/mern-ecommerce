@@ -10,6 +10,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Profile from "./pages/Profile";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -30,6 +31,9 @@ const App = () => {
             </Route>
             <Route exact path='/register'>
               <Register />
+            </Route>
+            <Route exact path='/profile'>
+              <Profile />
             </Route>
             <Route exact path='/'>
               <HomePage />
